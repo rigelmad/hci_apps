@@ -1,0 +1,139 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Order Fresh at Smashburger!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-toggle>
+        <ion-button color="primary">
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-menu-toggle>
+    </ion-buttons>
+    <ion-searchbar placeholder="Search Help"></ion-searchbar>
+  </ion-toolbar>
+
+  <ion-menu type="overlay" side="start" class="my-custom-menu" swipeGesture="false">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Start Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Order Online</ion-item>
+        <ion-item>Careers</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
+
+  <ion-card class="welcome-card">
+  <img src="/assets/smashburger.png" alt=""/>
+    <ion-card-header>
+      <ion-card-subtitle>Order Now!</ion-card-subtitle>
+      <ion-card-title>Smash n Dash!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Place your order here. What will you have?</p>
+    </ion-card-content>
+  </ion-card>
+
+   <ion-radio-group>
+
+    <ion-list-header color="secondary">
+      Where to Eat?
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Smash In</ion-label>
+      <ion-radio value="smash in"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Smash Out</ion-label>
+      <ion-radio value="smash out"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Drive In</ion-label>
+      <ion-radio value="drive in"></ion-radio>
+    </ion-item>
+
+   </ion-radio-group>
+   <ion-list>
+
+   <ion-list-header color="secondary">Select Your Bun</ion-list-header>
+
+     <ion-item>
+       <ion-label>Bun</ion-label>
+       <ion-select placeholder="Select One">
+         <ion-select-option value="f">Egg</ion-select-option>
+         <ion-select-option value="m">Sesame</ion-select-option>
+         <ion-select-option value="m">Rye</ion-select-option>
+         <ion-select-option value="m">Gluten Free</ion-select-option>
+       </ion-select>
+     </ion-item>
+
+   </ion-list>
+   <ion-radio-group>
+     <ion-list-header color="secondary">
+      Pick Your Meat
+     </ion-list-header>
+
+    <ion-item>
+      <ion-label>Beef</ion-label>
+      <ion-radio value="beef"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Grilled Chix</ion-label>
+      <ion-radio value="gc"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Crispy Chix</ion-label>
+      <ion-radio value="cc"></ion-radio>
+    </ion-item>
+
+   </ion-radio-group>
+
+
+   <ion-list>
+     <ion-list-header color="secondary">
+       Choose Your Toppings
+     </ion-list-header>
+
+     <ion-item>
+       <ion-label>Lettuce</ion-label>
+       <ion-checkbox slot="end" value="lettuce"></ion-checkbox>
+     </ion-item>
+     <ion-item>
+       <ion-label>Tomato</ion-label>
+       <ion-checkbox slot="end" value="lettuce"></ion-checkbox>
+     </ion-item>
+     <ion-item>
+       <ion-label>Mushroom</ion-label>
+       <ion-checkbox slot="end" value="lettuce"></ion-checkbox>
+     </ion-item>
+     <ion-item>
+       <ion-label>Bacon</ion-label>
+       <ion-checkbox slot="end" value="lettuce"></ion-checkbox>
+     </ion-item>
+   </ion-list>
+
+   <ion-button>
+    <ion-icon slot="icon-only" name="cart"></ion-icon>
+    <p>Move to Cart</p>
+  </ion-button>
+  <ion-button color="tertiary">
+    <ion-icon slot="icon-only" name="logo-usd"></ion-icon>
+    <p> Pay Now</p>
+  </ion-button>
+</ion-content>
