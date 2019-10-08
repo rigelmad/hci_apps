@@ -1,5 +1,7 @@
 {
   "name": "i3_app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

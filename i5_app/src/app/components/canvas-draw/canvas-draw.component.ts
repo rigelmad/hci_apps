@@ -14,10 +14,20 @@ export class CanvasDraw {
     lastY: number;
 
     currentColour: string = '#1abc9c';
+    availableColours: any;
+
     brushSize: number = 10;
 
     constructor(public platform: Platform, public renderer: Renderer) {
         console.log('Hello CanvasDraw Component');
+
+        this.availableColours = [
+          '#1abc9c',
+          '#3498db',
+          '#9b59b6',
+          '#e67e22',
+          '#e74c3c'
+        ];
     }
 
     ngAfterViewInit(){
@@ -27,6 +37,14 @@ export class CanvasDraw {
         this.renderer.setElementAttribute(this.canvasElement, 'width', this.platform.width() + '');
         this.renderer.setElementAttribute(this.canvasElement, 'height', this.platform.height() + '');
 
+    }
+
+    changeColour(colour){
+        this.currentColour = colour;
+    }
+
+    changeSize(size){
+        this.brushSize = size;
     }
 
     handleStart(ev){
@@ -54,5 +72,11 @@ export class CanvasDraw {
         this.lastY = currentY;
 
     }
+
+    clearCanvas() {
+        let ctx = this.canvasElement.getContext('2d');
+        ctx.clearRect(0, 0, this.canvasElement.width, this.canvasElement.height);
+    }
+
 
 }
