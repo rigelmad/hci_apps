@@ -4,13 +4,20 @@ canvas-draw {
     width: 100%;
     display: block;
 
+    #myCanvas{
+        height: 70%;
+        display: block;
+    }
+
     #top-toolbar{
         position: absolute;
+        height: 15%;
         top: 0;
     }
 
     #bottom-toolbar {
         position: absolute;
+        height: 15%;
         bottom: 0;
     }
 
