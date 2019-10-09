@@ -1,5 +1,18 @@
 #!/bin/bash
 
+## When you get a chance, integrate this user input:
+## 123456
+## 123456
+## Rigel Madraswalla
+## Northeastern
+## NEU
+## Boston
+## MA
+## US
+## yes
+## \n
+## 123456
+
 set -e # Exit on any errors
 
 if [[ $# -eq 0 ]] ; then
