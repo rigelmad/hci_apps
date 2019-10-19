@@ -32,3 +32,6 @@ npm-debug.log*
 /plugins
 /resources
 /www
+/GUIFormExamples/nbproject/private/
+/i6_app/nbproject/private/
+/i6_app/build/
